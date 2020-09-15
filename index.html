@@ -3,6 +3,8 @@
     <head>
         <title>Single Page Site</title>
         <link rel="stylesheet" href="style.css">
+        <!-- Animate on Scroll-->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     </head>
     <body>
 
@@ -21,8 +23,10 @@
 
             <section id="banner">
                 <div>
-                    <h2>The Art of Paper Folding</h2>
-                    <p>Origami</p>
+                    <header>
+                        <h2>The Art of Paper Folding</h2>
+                        <p>Origami</p>
+                    </header>
                 </div>
             </section>
 
@@ -136,8 +140,18 @@
 
                     <button type="submit">Submit</button>
                 </form>
+                <small>Copyright&copy; Matthew Wei 2020.</small>
             </footer>
         </main>
+        <!-- JS always goes at the bottom of the body -->
+        <!-- Animate on Scroll JS Step 2 -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+        <!-- Animate on Scroll JS Step 3 -->
+        <script>
+            //Your JS Here
+            AOS.init();
+        </script>
 
     </body>
 </html>
