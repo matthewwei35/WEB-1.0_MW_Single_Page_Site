@@ -1,5 +1,13 @@
 body {
     margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: lighter;
+    font-size: 18px;
+}
+
+section, footer  {
+    padding: 2rem;
+    margin: 0;
 }
 
 nav, main > section {
@@ -8,6 +16,27 @@ nav, main > section {
 
 main > section {
     min-height: 100vh;
+}
+
+main > #what-is-origami, #some-examples-of-origami {
+    min-height: 70vh;
+}
+
+h2, h3 {
+    font-weight: normal;
+}
+
+nav > h1 {
+    padding: 0 2rem;
+    display: flex;
+    align-self: center;
+    font-weight: normal;
+    color: #fff;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
 }
 
 nav ul {
@@ -20,7 +49,7 @@ nav ul a {
 }
 
 #nav {
-    background-color: #E0BBE4;
+    background-color: rgba(20, 31, 76, 0.6);
     display: flex;
     justify-content: space-between;
     align-items: baseline;
@@ -31,6 +60,7 @@ nav ul a {
     background-image: url(images/origami-crane-0.jpg);
     background-size: cover;
     background-position: bottom left;
+    background-attachment: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -45,14 +75,16 @@ nav ul a {
 
 #banner > div {
     position: relative;
-    left: -120px;
+    left: -60px;
     top: 120px
 }
 
 .card {
     width: 400px;
+    padding: 1em;
     margin: 1em;
     background-color: #eee;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.30);
 }
 
 .card img {
@@ -60,7 +92,7 @@ nav ul a {
 }
 
 #what-is-origami {
-    background-color: #D291BC;
+    background-color: #fff;
 }
 
 #what-is-origami ul {
@@ -94,14 +126,94 @@ nav ul a {
     text-align: center;
 }
 
-#origami-artists {
-    background-color: #FFDFD3;
+#famous-origami-artist {
+    display: flex;
+    background-image: url(images/origami-barn-owl.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
 }
 
-#some-examples {
-    background-color: #FAEBD7;
+#robert-lang > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    padding: 0 0 2em 2em;
+    width: 100%;
+    margin: auto;
+    color: #fff;
+}
+
+#robert-lang h3, #robert-lang p {
+    margin: 0 0 1rem 0;
+}
+
+#robert-lang > div > div:nth-child(1) {
+    flex: 3;
+    margin: 0 2em 0 0;
+}
+
+#robert-lang > div > div:nth-child(2) {
+    flex: 2;
+}
+
+#robert-lang > div img {
+    box-shadow: 0 0 22px rgba(0, 0, 0, 0.44);
+}
+
+#some-examples-of-origami {
+    background-color: #fff;
+}
+
+#some-examples-of-origami > ul > li > a {
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    width: 1em 0;
+    padding: 0.5em 1em;
+    border-radius: 0.5em;
+}
+
+#some-examples-of-origami ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
 }
 
 #contact-us {
-    background-color: #FFDDDD;
+    background-color: rgba(20, 31, 76, 0.6);
+    color: #fff;
+}
+
+#contact-us label {
+    display: flex;
+    flex-direction: column;
+    padding: 1em 0;
+}
+
+input, textarea {
+    border: 1.5px solid #000;
+    padding: 0.5em;
+    margin: 0 2em 0 0;
+    width: 20em;
+    font-size: 1em;
+}
+
+textarea {
+    height: 9em;
+    margin: 0 0 0 0;
+}
+
+form button {
+    width: auto;
+    font-size: 1em;
+    margin: 1em 0;
+    align-self: flex-end;
+    padding: 0.5em 1em;
+    background-color: rgb(0, 0, 0);
+    border-radius: 0.5rem;
+    color: #fff;
+    border: none;
 }
