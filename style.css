@@ -48,6 +48,11 @@ nav ul a {
     padding: 1em;
 }
 
+nav li {
+    display: flex;
+    align-items: center;
+}
+
 #nav {
     background-color: rgba(20, 31, 76, 0.6);
     display: flex;
@@ -75,7 +80,7 @@ nav ul a {
 
 #banner > div {
     position: relative;
-    left: -60px;
+    left: -220px;
     top: 120px
 }
 
@@ -175,7 +180,7 @@ nav ul a {
     background-color: #000;
     color: #fff;
     text-decoration: none;
-    width: 1em 0.5em;
+    width: auto;
     padding: 0.5em 1em;
     border-radius: 0.5em;
     align-self: flex-end;
@@ -191,6 +196,9 @@ nav ul a {
 }
 
 #contact-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: rgba(20, 31, 76, 0.6);
     color: #fff;
 }
@@ -204,7 +212,7 @@ nav ul a {
 input, textarea {
     border: 1.5px solid #000;
     padding: 0.5em;
-    margin: 0 2em 0 0;
+    margin: 0 0 0 0;
     width: 20em;
     font-size: 1em;
 }
@@ -215,10 +223,11 @@ textarea {
 }
 
 form button {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: lighter;
     width: auto;
     font-size: 1em;
-    margin: 1em 0;
-    align-self: flex-end;
+    margin: 1em 0 1em 290px;
     padding: 0.5em 1em;
     background-color: rgb(0, 0, 0);
     border-radius: 0.5rem;
